@@ -1,0 +1,148 @@
+/* Main container */
+.container {
+    flex-grow: 1;
+    height: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info{
+    display: block;
+    float: right;
+    text-align: right;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+/* Main content */
+.main-content{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+/* Technologies */
+.technologies{
+    display: flex;
+    justify-content: center;
+}
+.technologies-item{
+    display: flex;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    float: left;
+}
+.tech-icon{
+    width: 200px;
+    height: 200px;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.link-icon{
+    font-size: 80px;
+}
+.icon-linkedin{
+    color: #0077B5;
+    -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+.icon-linkedin:hover{
+    color: rgb(3, 107, 163);
+}
+.icon-github{
+    color: #333;
+    -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+.icon-github:hover{
+    color: #6e5494;
+}
+.icon-udacity{
+    height: 69px;
+    width: 69px;
+    border-radius: 10px;
+    margin: 8.2px 0 8.2px 0;
+    -webkit-transition: filter 0.5s; /* Safari */
+    transition: filter 0.5s;
+}
+.icon-udacity:hover{
+    filter: brightness(90%);
+}
+
+/* Fonts */
+.sunflower{
+    font-family: 'Sunflower', sans-serif;
+}
+.quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+.heading{
+    font-size: 40px;
+}
+.subheading{
+    font-size: 20px;
+}
+
+/* Misc */
+.divider{
+    border-bottom: 3px solid #2d3c49;
+}
+.grid{
+    display: grid;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+/* Different medias */
+@media only screen and (max-width: 550px) {
+    /* Header */
+    .logo{
+        display: none;
+    }
+    .header{
+        justify-content: flex-end;
+    }
+
+    /* Main content */
+    .main-content{
+        display: none;
+    }
+
+    /* Technologies */
+    .technologies{
+        display: flow-root;
+    }
+    .technologies-item{
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .grid{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    /* Fonts */
+    .heading{
+        font-size: 25px;
+    }
+    .subheading{
+        font-size: 15px;
+    }
+}
